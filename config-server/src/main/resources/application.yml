@@ -7,8 +7,17 @@ spring:
         git: 
           uri: https://github.com/dhanamjaya123/config-repository.git
           searchPaths: configuration-files-list
-          username: xxxxxx
-          password: xxxxxx 
-profiles: default
+          username: xxxxx
+          password: xxxxx
+management:
+  server:
+    port: 9001
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "always"
       
        
